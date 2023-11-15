@@ -1,33 +1,336 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salon tatoo</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav> <!-- NAVIGATION -->
-        <a class="logo-nav" href="#">Ink Studio</a>
+<html lang="fr">
+
+	<head>
+		
+		<meta charset="utf-8">
+
+		<title>Site test - accueil</title>
+		
+        <!-- META DONNEES -->
         
-        <ul class="onglets-nav">
-            <li><a href="#sec-salon">le salon</a></li>
-            <li><a href="#sec-equipe">l'équipe</a></li>
-            <li><a href="#sec-tatouages">les tatouages</a></li>
-            <li><a href="#sec-contact">contact</a></li>
-        </ul>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0"/>
+		
+		<!-- FAVICON -->
+		
+		<link rel="shortcut icon" href="./css/img_interface/icon.png" type="image/x-icon" />
+		
+		<!-- FEUILLES DE STYLE --> 
         
-        <ul class="rs-nav" class="rs">
-            <li><a alt="facebook inkstudio" title="facebook inkstudio" href="https://www.facebook.com/"><img src="./img/pictos/facebook.png"/></a></li>
-            <li><a alt="instagram inkstudio" title="instagram inkstudio" href="https://www.instagram.com/"><img src="./img/pictos/instagram.png"/></a></li>
-            <li><a alt="twitter inkstudio" title="twitter inkstudio" href="https://twitter.com/"><img src="./img/pictos/twitter.png"/></a></li>
-        </ul>
-    </nav>
+		<link href="./css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="./css/styles.css" rel="stylesheet" type="text/css" />
+		
+        <!-- SCRIPTS BASE JQUERY -->
+        
+		<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+		<!-- <script type="text/javascript" src="js/wow.min.js"></script> -->
+        
+        <!-- SCRIPT WOW - POUR LA POPUP --> 
+        
+        <script>
+            // new WOW().init();        
+        </script>       
+	
+	</head>
+    
+	<body>
+          
+        <nav> <!-- NAVIGATION -->
+        
+            <a id="logo-nav" href="#">Ink Studio</a>
+            
+            <ul id="onglets-nav">
+                <li><a href="#sec-salon">le salon</a></li>
+                <li><a href="#sec-equipe">l'équipe</a></li>
+                <li><a href="#sec-tatouages">les tatouages</a></li>
+                <li><a href="#sec-contact">contact</a></li>
+            </ul>
+            
+            <ul id="rs-nav" class="rs">
+                <li><a alt="facebook inkstudio" title="facebook inkstudio" href="https://www.facebook.com/"><img src="./img/pictos/facebook.png"/></a></li>
+                <li><a alt="instagram inkstudio" title="instagram inkstudio" href="https://www.instagram.com/"><img src="./img/pictos/instagram.png"/></a></li>
+                <li><a alt="twitter inkstudio" title="twitter inkstudio" href="https://twitter.com/"><img src="./img/pictos/twitter.png"/></a></li>
+            </ul>
+        
+        </nav>
+        
+        <header> <!-- HEADER -->
+        
+            <div id="content-header">
+            
+                <h1>Bienvenue chez Ink Studio !</h1>
+                <img id="logo-accueil" src="./img/logo/logo-inkstudio.svg"/>
+                
+                <div class="container__buttons">
+                    <a href="#sec-contact" class="btn-accueil btn-solid-vert">Je veux me faire tatouer</a>
+                    <a href="#sec-tatouages" class="btn-border-blanc">Je veux voir le tatouages</a>
+                </div>
+            
+            </div>
+        
+        </header>
+        
+        <div id="spec-triangle"><img src="./img/pictos/triangle-scroll.svg"/></div>
 
-    <header>
+        <main> <!-- CONTENU PRINCIPAL -->
+        
+            <section id="sec-salon"> <!-- SECTION - SALON -->
+            
+                <div class="photo-demi"></div>
+                
+                <div class="zone-demi">
+                
+                    <div class="zone-contenu-demi">
+                        
+                        <h2>Le salon</h2>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                        <ul class="rs-contenu">
+                            <li><a alt="facebook inkstudio" title="facebook inkstudio" href="https://www.facebook.com/"><img src="./img/pictos/facebook.png"/></a></li>
+                            <li><a alt="instagram inkstudio" title="instagram inkstudio" href="https://www.instagram.com/"><img src="./img/pictos/instagram.png"/></a></li>
+                            <li><a alt="twitter inkstudio" title="twitter inkstudio" href="https://twitter.com/"><img src="./img/pictos/twitter.png"/></a></li>
+                        </ul>
+                        
+                    </div>
+                
+                </div>
+            
+            </section>
+            
+            <section id="sec-equipe" class="container-fluid"> <!-- SECTION - EQUIPE --> <!-- BOOTSTRAP - Contenu qui prend toute la largeur de page -->
+            
+                <div class="container"> <!-- BOOTSTRAP - Contenu centré de la taille de la grille de composition -->
 
-    </header>
+                    <div class="row"> <!-- BOOTSTRAP - Ligne 01 - Titre + Texte -->
 
-</body>
-<!-- </html> -->
+                        <h2>L'équipe</h2>
+                        <p class="col-md-6 offset-md-3"> <!-- BOOTSTRAP - Division de 6 colonnes de large avec marge gauche de 3 colonnes -->
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+
+                    </div>
+
+                    <div class="row"> <!-- BOOTSTRAP - Ligne 02 - Photos + Texte -->
+
+                        <div class="col-xs-12 col-sm-6 col-md-3"> <!-- BOOTSTRAP - Div 12 col en très petit - Div 6 col en moyen - Div 3 col en classique -->
+                        
+                            <img alt="" title="" src="./img/artistes/Mathias.jpg"/>
+                            <h3>Mathias</h3>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+                            
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-3"> <!-- BOOTSTRAP - Div 12 col en très petit - Div 6 col en moyen - Div 3 col en classique -->
+                        
+                            <img alt="" title="" src="./img/artistes/Alicia.jpg"/>
+                            <h3>Alicia</h3>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+                            
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-3"> <!-- BOOTSTRAP - Div 12 col en très petit - Div 6 col en moyen - Div 3 col en classique -->
+                        
+                            <img alt="" title="" src="./img/artistes/Kim.jpg"/>
+                            <h3>Kim</h3>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+                            
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-3"> <!-- BOOTSTRAP - Div 12 col en très petit - Div 6 col en moyen - Div 3 col en classique -->
+                        
+                            <img alt="" title="" src="./img/artistes/Marion.jpg"/>
+                            <h3>Marion</h3>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="centrage-horizontal-flex "> <!-- BOOTSTRAP - Ligne 03 - bouton -->
+
+                        <a href="#sec-contact" class="btn-contenu btn-solid-vert">Je veux me faire taouer</a>
+
+                    </div>
+
+                </div>
+            
+            </section>
+            
+            <section id="sec-tatouages"> <!-- SECTION - TATOUAGES -->
+            
+                <div class="banner-accroche">
+                
+                    <h2>Les tatouages</h2>
+                
+                </div>
+                
+                <div id="galerie-contener"> <!-- GALERIE PHOTOS -->
+                
+                    <a href="./img/tatouages/tatouage-01.jpg" class="img-galerie">
+						<div class="survol-galerie">
+                            <img src="./img/pictos/loupe.png">
+                            <p>Agrandir<br/>l'image</p>
+                        </div>
+                        <img class="photo" src="./img/tatouages/tatouage-01.jpg"/>
+					</a>
+					
+					<a href="./img/tatouages/tatouage-02.jpg" class="img-galerie">
+                        <div class="survol-galerie">
+                            <img src="./img/pictos/loupe.png">
+                            <p>Agrandir<br/>l'image</p>
+                        </div>
+						<img class="photo" src="./img/tatouages-vignettes/tatouage-02.jpg"/>
+					</a>
+					<a href="./img/tatouages/tatouage-03.jpg" class="img-galerie">
+                        <div class="survol-galerie">
+                            <img src="./img/pictos/loupe.png">
+                            <p>Agrandir<br/>l'image</p>
+                        </div>
+						<img class="photo" src="./img/tatouages-vignettes/tatouage-03.jpg"/>
+					</a>
+					<a href="./img/tatouages/tatouage-04.jpg" class="img-galerie">
+                        <div class="survol-galerie">
+                            <img src="./img/pictos/loupe.png">
+                            <p>Agrandir<br/>l'image</p>
+                        </div>
+						<img class="photo" src="./img/tatouages-vignettes/tatouage-04.jpg"/>
+					</a>
+					
+					<a href="./img/tatouages/tatouage-05.jpg" class="img-galerie">
+                        <div class="survol-galerie">
+                            <img src="./img/pictos/loupe.png">
+                            <p>Agrandir<br/>l'image</p>
+                        </div>
+						<img class="photo" src="./img/tatouages-vignettes/tatouage-05.jpg"/>
+					</a>
+					<a href="./img/tatouages/tatouage-06.jpg" class="img-galerie">
+                        <div class="survol-galerie">
+                            <img src="./img/pictos/loupe.png">
+                            <p>Agrandir<br/>l'image</p>
+                        </div>
+						<img class="photo" src="./img/tatouages-vignettes/tatouage-06.jpg"/>
+					</a>
+					<a href="./img/tatouages/tatouage-07.jpg" class="img-galerie">
+                        <div class="survol-galerie">
+                            <img src="./img/pictos/loupe.png">
+                            <p>Agrandir<br/>l'image</p>
+                        </div>
+						<img class="photo" src="./img/tatouages-vignettes/tatouage-07.jpg"/>
+					</a>
+					<a href="./img/tatouages/tatouage-08.jpg" class="img-galerie">
+                        <div class="survol-galerie">
+                            <img src="./img/pictos/loupe.png">
+                            <p>Agrandir<br/>l'image</p>
+                        </div>
+						<img class="photo" src="./img/tatouages-vignettes/tatouage-08.jpg"/>
+					</a>
+					
+					<a href="./img/tatouages/tatouage-09.jpg" class="img-galerie">
+                        <div class="survol-galerie">
+                            <img src="./img/pictos/loupe.png">
+                            <p>Agrandir<br/>l'image</p>
+                        </div>
+						<img class="photo" src="./img/tatouages-vignettes/tatouage-09.jpg"/>
+					</a>
+					<a href="./img/tatouages/tatouage-10.jpg" class="img-galerie">
+                        <div class="survol-galerie">
+                            <img src="./img/pictos/loupe.png">
+                            <p>Agrandir<br/>l'image</p>
+                        </div>
+						<img class="photo" src="./img/tatouages-vignettes/tatouage-10.jpg"/>
+					</a>
+                    
+					<div class="sec-btn-galerie">
+						<a class="btn-border-blanc" href="#sec-tatouages">Je veux voir tous les tatoo</a>
+					</div>
+                
+                </div>
+            
+            </section>
+            
+            <section id="sec-contact" class="container-fluid"> <!-- SECTION - CONTACT -->
+            
+                <div class="container">
+                
+                    <div class="row">
+                    
+                        <h2>Contact</h2>
+                        <p class="col-md-6 offset-md-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+                    
+                    </div>
+                    
+                    <div id="contener-contact" class="row">
+                    
+                        <div class="col-md-4">
+                        
+                            <h3>Coordonnées du salon</h3>
+                            <ul id="contenu-infos-contact">
+                                
+                                <li id="picto-contact-mail">
+                                    <img src="./img/pictos/curseur.png"/><p>contact@inkstudio.fr</p>
+                                </li>
+                                
+                                <li id="picto-contact-tel">
+                                    <img src="./img/pictos/tel.png"/><p>0708549234</p>
+                                </li>
+                                
+                                <li id="picto-contact-adresse">
+                                    <img src="./img/pictos/puce.png"/><p>36 rue Emile Decorps,<br/>69100 Villeurbanne</p>
+                                </li>
+                                
+                            </ul>
+                            
+                            <h3 id="h3-rs-contact">Réseaux sociaux</h3>
+                            <ul class="rs-contenu">
+                                <li><a alt="facebook inkstudio" title="facebook inkstudio" href="https://www.facebook.com/"><img src="./img/pictos/facebook.png"/></a></li>
+                                <li><a alt="instagram inkstudio" title="instagram inkstudio" href="https://www.instagram.com/"><img src="./img/pictos/instagram.png"/></a></li>
+                                <li><a alt="twitter inkstudio" title="twitter inkstudio" href="https://twitter.com/"><img src="./img/pictos/twitter.png"/></a></li>
+                            </ul>
+                            
+                            <img id="logo-contact" src="./img/logo/logo-inkstudio.svg"/>
+                            
+                        </div>
+                        
+                        <div class="col-md-6 offset-md-2">
+                        
+                            <form method="post" action="./lien vers un script php">
+                    
+                                <input id="champNom" class="champ-formulaire" type="text" placeholder="Nom" value="" name="nom"/>
+                                <input id="champPrenom" class="champ-formulaire" type="text" placeholder="Prénom" value="" name="prenom"/>
+                                <input id="champEmail" class="champ-formulaire" type="email" placeholder="Email" value="" name="email"/>
+
+                                <input id="champObjet" class="champ-formulaire" type="text" placeholder="Objet" value="" name="objet"/>
+                                <textarea id="champMessage" class="champ-texte" placeholder="Votre message" name="message"></textarea>
+
+                                <input class="btn-solid-vert btn-form" type="submit" value="Envoyer le message" id="btnForm" />
+
+                            </form>
+                            
+                        </div>
+                    
+                    </div>
+                
+                </div>
+            
+            </section>
+        
+        </main>
+        
+        <footer> <!-- PIED DE PAGE -->
+            
+            <ul>
+                <li><a href="#">Mentions légales</a></li>
+                <li><p>-</p></li>
+                <li><a href="#">CGV</a></li>
+                <li><p>-</p></li>
+                <li><a href="#">Politiques de confidentalité</a></li>
+            </ul>
+            <p>Ink Studio - 2022</p>
+
+        </footer>
+        
+	</body>
+
+</html>

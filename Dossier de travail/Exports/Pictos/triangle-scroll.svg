@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="104" height="90" viewBox="0 0 104 90">
-  <g id="Groupe_17" data-name="Groupe 17" transform="translate(-908 -1035)">
-    <g id="Polygone_1" data-name="Polygone 1" transform="translate(1012 1125) rotate(180)" fill="none">
-      <path d="M52,0l52,90H0Z" stroke="none"/>
-      <path d="M 52 1.998893737792969 L 1.732696533203125 89 L 102.2673034667969 89 L 52 1.998893737792969 M 52 0 L 104 90 L 0 90 L 52 0 Z" stroke="none" fill="#fff"/>
-    </g>
-    <path id="Polygone_2" data-name="Polygone 2" d="M37,0,74,64H0Z" transform="translate(997 1108) rotate(180)" fill="#fff"/>
-  </g>
-</svg>
